@@ -9,14 +9,14 @@ create table account (
 );
 
 create table project (
-  id                        bigint not null,
+  id                        bigint not null AUTO_INCREMENT,
   name                      varchar(255),
   folder                    varchar(255),
   constraint pk_project primary key (id)
 );
 
 create table task (
-  id                        bigint not null,
+  id                        bigint not null AUTO_INCREMENT,
   title                     varchar(255),
   done                      boolean,
   due_date                  timestamp,
@@ -36,8 +36,6 @@ create table project_account (
   foreign key (account_email) references account (email) on delete cascade on update restrict
 );
 
-create sequence project_seq start with 1000;
-create sequence task_seq start with 1000;
 
 # --- !Downs
 
