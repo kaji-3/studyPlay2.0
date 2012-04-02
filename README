@@ -1,4 +1,5 @@
-This is your new Play 2.0 application
-=====================================
+This advanced todo list demonstrates a modern AJAX-based web application. This is a work in progress, and we plan to add several features in the future releases. For now you can check it out to learn how to:
 
-This file will be packaged with your application, when using `play dist`.
+- Integrate authentication, and security.
+- Use AJAX and the Javascript reverse routing.
+- Integrate with compiled assets - LESS CSS and CoffeeScript.
