@@ -1,6 +1,11 @@
 
 # --- !Ups
 
+# 事前に以下を実施すること。
+# create database zentasks;
+# create user zentasks;
+# SET PASSWORD FOR zentasks@"%"=password('zentasks');
+# grant all on zentasks.* to zentasks;
 create table account (
   email                     varchar(255) not null,
   name                      varchar(255),
@@ -44,7 +49,6 @@ drop table if exists project_account;
 drop table if exists project;
 drop table if exists account;
 
-drop sequence if exists project_seq;
-drop sequence if exists task_seq;
+
 
 
